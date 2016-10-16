@@ -40,7 +40,14 @@
 				// Background with backstretch
 				$('body.home').backstretch("images/bacgkround-01.jpg");
 				$('body.page-about').backstretch("images/bacgkround-03.jpg");
-				$('body.backstretch').backstretch("images/bacgkround-02.jpg");
+				$('body.page-conditions').backstretch("images/bacgkround-04.jpg");
+				$('body.backstretch').backstretch("images/bacgkround-13.jpg");
+				/*$('body.backstretch-slide').backstretch([
+					"images/bacgkround-12.jpg",
+					"images/bacgkround-07.jpg",
+					"images/bacgkround-08.jpg",
+					"images/bacgkround-02.jpg"
+					], {duration: 3000, fade: 750});*/
 
 				// Site navigation - Menu toggle
 				$('.mobile-menu-toggle').sidr({

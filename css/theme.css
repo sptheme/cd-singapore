@@ -7031,13 +7031,27 @@ body.full-screen .widget-area {
 /*-------------------------------------------------------------- 
  # CONTENT
 --------------------------------------------------------------*/
-.content-area {
-  background: #ffffff;
-  padding: 30px 15px; }
-
 .entry-title {
   font-size: 1.5em;
   margin-bottom: 0.5em; }
+
+/* Entry tour */
+.card.entry-tour .card-block {
+  padding: 0.5rem; }
+
+.card.entry-tour .card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+
+.card.entry-tour .list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 0.250rem 0.5rem;
+  font-size: 0.750rem; }
+
+.card.entry-tour .list-group-item span {
+  color: #999999; }
 
 /*-------------------------------------------------------------- 
  # FOOTER
@@ -7047,11 +7061,10 @@ body.full-screen .widget-area {
   margin-top: 30px; }
 
 .site-info {
-  padding: 20px 0; }
+  padding: 0 0 20px; }
 
 #logo-awards {
-  background: #fff;
-  margin-bottom: 20px; }
+  background: #fff; }
 
 /*-------------------------------------------------------------- 
  # HOME
@@ -7099,5 +7112,7 @@ body.full-screen .widget-area {
  # ACCESSIBILITY
 --------------------------------------------------------------*/
 .bg-opacity-round {
+  padding: 30px 15px;
+  background: #ffffff;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 0.25rem; }
