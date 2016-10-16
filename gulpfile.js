@@ -15,7 +15,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/clients/cotafer/cf-html",
+    proxy: "cd-singapore",
     notify: false
 };
 
@@ -143,6 +143,7 @@ gulp.task('scripts', function() {
     // End - All BS4 stuff
 
     basePaths.dev + 'js/sidr/jquery.sidr.min.js', 
+    basePaths.dev + 'js/backstretch/jquery.backstretch.min.js'
     ])
     .pipe(concat('theme.min.js'))
     .pipe(uglify())
@@ -159,6 +160,7 @@ gulp.task('scripts', function() {
     // End - All BS4 stuff
 
     basePaths.dev + 'js/sidr/jquery.sidr.js', 
+    basePaths.dev + 'js/backstretch/jquery.backstretch.js',
     ])
     .pipe(concat('theme.js'))
     .pipe(gulp.dest('./js/'));
@@ -219,7 +221,11 @@ gulp.task('copy-assets', function() {
 
 // Copy Sidr CSS files
     gulp.src(basePaths.node + 'sidr/src/stylesheets/*.css')
-        .pipe(gulp.dest(basePaths.dev + '/css'));        
+        .pipe(gulp.dest(basePaths.dev + '/css'));  
+
+// Copy Backstretch JS files
+    gulp.src(basePaths.node + 'jquery.backstretch/*.js')
+        .pipe(gulp.dest(basePaths.dev + '/js/backstretch/'));              
 
 });
 

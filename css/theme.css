@@ -6874,6 +6874,13 @@ a.text-danger:focus, a.text-danger:hover {
 ----------------------------------------------------------------
 
 # STRUCTURE AND LAYOUT
+# HEADER
+# SITE NAVIGATION
+# BREADCRUMBS
+# CONTENT
+# FOOTER
+# HOME
+# ACCESSIBILITY
 
 --------------------------------------------------------------*/
 /*-------------------------------------------------------------- 
@@ -6882,13 +6889,215 @@ a.text-danger:focus, a.text-danger:hover {
 #page {
   overflow: hidden; }
 
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 52.500em; } }
+
 body.left-sidebar .content-area {
   float: right; }
 
 /* Full-Width & Full-Screen */
 body.full-width .content-area,
 body.full-width .widget-area,
-body.full-screen .site-content .container {
+body.full-screen .site-content .container,
+body.full-screen .content-area,
+body.full-screen .widget-area {
   float: none;
   max-width: 100%;
   width: 100%; }
+
+/*-------------------------------------------------------------- 
+ # HEADER
+--------------------------------------------------------------*/
+#site-header-inner {
+  position: relative;
+  padding: 30px; }
+
+.mobile-menu-toggle {
+  font-size: 32px;
+  color: #000000;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 36px; }
+
+.page-header {
+  width: 52.5em;
+  position: absolute;
+  left: 50%;
+  margin-left: -420px;
+  top: 40px;
+  border-radius: 0.5rem; }
+
+.page-header-table {
+  display: table;
+  width: 100%;
+  height: 120px; }
+
+.page-header-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 30px; }
+
+.page-header-title {
+  text-align: center;
+  color: #fecc00;
+  font-size: 2em;
+  text-transform: uppercase; }
+
+/*-------------------------------------------------------------- 
+ # SITE NAVIGATION
+--------------------------------------------------------------*/
+.sidr-main-logo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.sidr {
+  background: #003e68; }
+
+#site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+#site-navigation ul li a {
+  color: #ffffff;
+  border-bottom: 1px solid #002a56;
+  display: block;
+  padding: 5px 10px 5px 20px;
+  font-size: 16px; }
+
+#site-navigation ul.sub-menu li a {
+  display: block;
+  background: #004c7f;
+  color: #4bb6ff;
+  padding: 5px 10px 5px 30px;
+  font-size: 13px; }
+
+/* Hover and Active */
+#site-navigation a:hover,
+#site-navigation ul.sub-menu a:hover,
+#site-navigation li.current-menu-item a,
+#site-navigation ul.sub-menu li.current-menu-item a {
+  color: #c3006b;
+  background: #fecc00;
+  text-decoration: none; }
+
+/* Quick contact */
+.quick-contact {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #99ccff; }
+
+.quick-contact h5 {
+  font-size: 16px; }
+
+.quick-contact p {
+  margin-bottom: 13px; }
+
+/*-------------------------------------------------------------- 
+ # BREADCRUMBS
+--------------------------------------------------------------*/
+.site-breadcrumbs {
+  font-size: 0.9em;
+  color: #777777;
+  margin-bottom: 1em; }
+
+.site-breadcrumbs a {
+  color: #333; }
+
+.site-breadcrumbs .breadcrumb-trail {
+  display: inline-block; }
+
+.site-breadcrumbs .breadcrumb-title {
+  margin-right: 5px; }
+
+.site-breadcrumbs .fa {
+  margin: 0 3px; }
+
+.site-breadcrumbs .trail-begin .fa {
+  margin: 0 5px 0 0; }
+
+/*-------------------------------------------------------------- 
+ # CONTENT
+--------------------------------------------------------------*/
+.content-area {
+  background: #ffffff;
+  padding: 30px 15px; }
+
+.entry-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em; }
+
+/*-------------------------------------------------------------- 
+ # FOOTER
+--------------------------------------------------------------*/
+.site-footer {
+  text-align: center;
+  margin-top: 30px; }
+
+.site-info {
+  padding: 20px 0; }
+
+#logo-awards {
+  background: #fff;
+  margin-bottom: 20px; }
+
+/*-------------------------------------------------------------- 
+ # HOME
+--------------------------------------------------------------*/
+.welcome-message {
+  font-weight: 400;
+  margin-bottom: 1em; }
+
+.welcome-message strong {
+  font-weight: 500; }
+
+.welcome .card {
+  background: #177e9f;
+  color: #ffffff; }
+
+.welcome .card-block {
+  padding: 1rem; }
+
+.welcome .card-title {
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.welcome .card a {
+  color: #fecc00; }
+
+.welcome .card a:hover {
+  color: #ffffff; }
+
+.welcome .card-meta {
+  padding: 1.5rem 1rem 0.5rem;
+  color: #003e68; }
+
+.welcome .card-meta h4 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-family: 'Arial'; }
+
+.welcome .card-meta span {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+/*-------------------------------------------------------------- 
+ # ACCESSIBILITY
+--------------------------------------------------------------*/
+.bg-opacity-round {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.25rem; }

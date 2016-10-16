@@ -36,9 +36,22 @@
 
 			// Run on doucment ready
 			self.config.$document.on( 'ready', function() {
-				console.log('Start...');
 
-				$('#simple-menu').sidr();
+				// Background with backstretch
+				$('body.home').backstretch("images/bacgkround-01.jpg");
+				$('body.page-about').backstretch("images/bacgkround-03.jpg");
+				$('body.backstretch').backstretch("images/bacgkround-02.jpg");
+
+				// Site navigation - Menu toggle
+				$('.mobile-menu-toggle').sidr({
+					side: 'right',
+					onOpen   : function() {
+						$('#page').on( 'click', function( event ) {
+							$.sidr( 'close', 'sidr' );
+							return false;
+						} );
+					}
+				});
 			} );
 		}
 	}
